@@ -1,0 +1,478 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BADFMT	Makefile	/^BADFMT:=$(shell $(GOFMT) -l $(GOFILES) $(CGOFILES) $(wildcard *_test.go))$/;"	m
+CGOFILES	Makefile	/^CGOFILES=\\$/;"	m
+GOFILES	Makefile	/^GOFILES=\\$/;"	m
+GOFMT	Makefile	/^GOFMT=gofmt$/;"	m
+GetYAML	encode_test.go	/^func (o typeWithGetter) GetYAML() (tag string, value interface{}) {$/;"	f
+Getter	goyaml.go	/^type Getter interface {$/;"	t
+LIBYAML	Makefile	/^LIBYAML=$(PWD)\/$(YAML)\/src\/.libs\/libyaml.a$/;"	m
+Len	sorter.go	/^func (l keyList) Len() int      { return len(l) }$/;"	f
+Less	sorter.go	/^func (l keyList) Less(i, j int) bool {$/;"	f
+Marshal	goyaml.go	/^func Marshal(in interface{}) (out []byte, err error) {$/;"	f
+S	suite_test.go	/^type S struct{}$/;"	t
+SetYAML	decode_test.go	/^func (o *typeWithSetter) SetYAML(tag string, value interface{}) (ok bool) {$/;"	f
+Setter	goyaml.go	/^type Setter interface {$/;"	t
+String	goyaml.go	/^func (e externalPanic) String() string {$/;"	f
+String	yamlh.go	/^func (ps yaml_parser_state_t) String() string {$/;"	f
+String	yamlh.go	/^func (tt yaml_token_type_t) String() string {$/;"	f
+Swap	sorter.go	/^func (l keyList) Swap(i, j int) { l[i], l[j] = l[j], l[i] }$/;"	f
+TARG	Makefile	/^TARG=launchpad.net\/goyaml$/;"	m
+Test	suite_test.go	/^func Test(t *testing.T) { TestingT(t) }$/;"	f
+TestMarshal	encode_test.go	/^func (s *S) TestMarshal(c *C) {$/;"	f
+TestMarshalErrors	encode_test.go	/^func (s *S) TestMarshalErrors(c *C) {$/;"	f
+TestMarshalTypeCache	encode_test.go	/^func (s *S) TestMarshalTypeCache(c *C) {$/;"	f
+TestMashalWithGetter	encode_test.go	/^func (s *S) TestMashalWithGetter(c *C) {$/;"	f
+TestSortedOutput	encode_test.go	/^func (s *S) TestSortedOutput(c *C) {$/;"	f
+TestUnmarshal	decode_test.go	/^func (s *S) TestUnmarshal(c *C) {$/;"	f
+TestUnmarshalErrors	decode_test.go	/^func (s *S) TestUnmarshalErrors(c *C) {$/;"	f
+TestUnmarshalNaN	decode_test.go	/^func (s *S) TestUnmarshalNaN(c *C) {$/;"	f
+TestUnmarshalWholeDocumentWithGetter	encode_test.go	/^func (s *S) TestUnmarshalWholeDocumentWithGetter(c *C) {$/;"	f
+TestUnmarshalWholeDocumentWithSetter	decode_test.go	/^func (s *S) TestUnmarshalWholeDocumentWithSetter(c *C) {$/;"	f
+TestUnmarshalWithFalseSetterIgnoresValue	decode_test.go	/^func (s *S) TestUnmarshalWithFalseSetterIgnoresValue(c *C) {$/;"	f
+TestUnmarshalWithSetter	decode_test.go	/^func (s *S) TestUnmarshalWithSetter(c *C) {$/;"	f
+Unmarshal	goyaml.go	/^func Unmarshal(in []byte, out interface{}) (err error) {$/;"	f
+YAML	Makefile	/^YAML=yaml-0.1.3$/;"	m
+_	suite_test.go	/^var _ = Suite(&S{})$/;"	v
+alias	decode.go	/^func (d *decoder) alias(n *node, out reflect.Value) (good bool) {$/;"	f
+alias	decode.go	/^func (p *parser) alias() *node {$/;"	f
+aliasNode	decode.go	/^	aliasNode$/;"	c
+anchor	decode.go	/^func (p *parser) anchor(n *node, anchor []byte) {$/;"	f
+as_digit	yamlprivateh.go	/^func as_digit(b []byte, i int) int {$/;"	f
+as_hex	yamlprivateh.go	/^func as_hex(b []byte, i int) int {$/;"	f
+bom_UTF16BE	readerc.go	/^	bom_UTF16BE = "\\xfe\\xff"$/;"	c
+bom_UTF16LE	readerc.go	/^	bom_UTF16LE = "\\xff\\xfe"$/;"	c
+bom_UTF8	readerc.go	/^	bom_UTF8    = "\\xef\\xbb\\xbf"$/;"	c
+boolv	encode.go	/^func (e *encoder) boolv(tag string, in reflect.Value) {$/;"	f
+cache	scannerc.go	/^func cache(parser *yaml_parser_t, length int) bool {$/;"	f
+decoder	decode.go	/^type decoder struct {$/;"	t
+default_tag_directives	parserc.go	/^var default_tag_directives = []yaml_tag_directive_t{$/;"	v
+destroy	decode.go	/^func (p *parser) destroy() {$/;"	f
+destroy	encode.go	/^func (e *encoder) destroy() {$/;"	f
+document	decode.go	/^func (d *decoder) document(n *node, out reflect.Value) (good bool) {$/;"	f
+document	decode.go	/^func (p *parser) document() *node {$/;"	f
+documentNode	decode.go	/^	documentNode = 1 << iota$/;"	c
+emit	encode.go	/^func (e *encoder) emit() {$/;"	f
+emitScalar	encode.go	/^func (e *encoder) emitScalar(value, anchor, tag string, style yaml_scalar_style_t) {$/;"	f
+encoder	encode.go	/^type encoder struct {$/;"	t
+externalPanic	goyaml.go	/^type externalPanic string$/;"	t
+fail	decode.go	/^func (p *parser) fail() {$/;"	f
+fieldInfo	goyaml.go	/^type fieldInfo struct {$/;"	t
+fieldMapMutex	goyaml.go	/^var fieldMapMutex sync.RWMutex$/;"	v
+finish	encode.go	/^func (e *encoder) finish() {$/;"	f
+floatv	encode.go	/^func (e *encoder) floatv(tag string, in reflect.Value) {$/;"	f
+flush	emitterc.go	/^func flush(emitter *yaml_emitter_t) bool {$/;"	f
+getStructInfo	goyaml.go	/^func getStructInfo(st reflect.Type) (*structInfo, error) {$/;"	f
+getterTests	encode_test.go	/^var getterTests = []struct {$/;"	v
+goyaml	apic.go	/^package goyaml$/;"	p
+goyaml	decode.go	/^package goyaml$/;"	p
+goyaml	emitterc.go	/^package goyaml$/;"	p
+goyaml	encode.go	/^package goyaml$/;"	p
+goyaml	goyaml.go	/^package goyaml$/;"	p
+goyaml	parserc.go	/^package goyaml$/;"	p
+goyaml	readerc.go	/^package goyaml$/;"	p
+goyaml	resolve.go	/^package goyaml$/;"	p
+goyaml	scannerc.go	/^package goyaml$/;"	p
+goyaml	sorter.go	/^package goyaml$/;"	p
+goyaml	writerc.go	/^package goyaml$/;"	p
+goyaml	yamlh.go	/^package goyaml$/;"	p
+goyaml	yamlprivateh.go	/^package goyaml$/;"	p
+goyaml_test	decode_test.go	/^package goyaml_test$/;"	p
+goyaml_test	encode_test.go	/^package goyaml_test$/;"	p
+goyaml_test	suite_test.go	/^package goyaml_test$/;"	p
+handleErr	goyaml.go	/^func handleErr(err *error) {$/;"	f
+init	resolve.go	/^func init() {$/;"	f
+initial_queue_size	yamlprivateh.go	/^	initial_queue_size  = 16$/;"	c
+initial_stack_size	yamlprivateh.go	/^	initial_stack_size  = 16$/;"	c
+initial_string_size	yamlprivateh.go	/^	initial_string_size = 16$/;"	c
+inlineB	decode_test.go	/^type inlineB struct {$/;"	t
+inlineC	decode_test.go	/^type inlineC struct {$/;"	t
+input_buffer_size	yamlprivateh.go	/^	input_buffer_size = input_raw_buffer_size * 3$/;"	c
+input_raw_buffer_size	yamlprivateh.go	/^	input_raw_buffer_size = 512$/;"	c
+intv	encode.go	/^func (e *encoder) intv(tag string, in reflect.Value) {$/;"	f
+isZero	goyaml.go	/^func isZero(v reflect.Value) bool {$/;"	f
+is_alpha	yamlprivateh.go	/^func is_alpha(b []byte, i int) bool {$/;"	f
+is_ascii	yamlprivateh.go	/^func is_ascii(b []byte, i int) bool {$/;"	f
+is_blank	yamlprivateh.go	/^func is_blank(b []byte, i int) bool {$/;"	f
+is_blankz	yamlprivateh.go	/^func is_blankz(b []byte, i int) bool {$/;"	f
+is_bom	yamlprivateh.go	/^func is_bom(b []byte, i int) bool {$/;"	f
+is_break	yamlprivateh.go	/^func is_break(b []byte, i int) bool {$/;"	f
+is_breakz	yamlprivateh.go	/^func is_breakz(b []byte, i int) bool {$/;"	f
+is_crlf	yamlprivateh.go	/^func is_crlf(b []byte, i int) bool {$/;"	f
+is_digit	yamlprivateh.go	/^func is_digit(b []byte, i int) bool {$/;"	f
+is_hex	yamlprivateh.go	/^func is_hex(b []byte, i int) bool {$/;"	f
+is_printable	yamlprivateh.go	/^func is_printable(b []byte, i int) bool {$/;"	f
+is_space	yamlprivateh.go	/^func is_space(b []byte, i int) bool {$/;"	f
+is_spacez	yamlprivateh.go	/^func is_spacez(b []byte, i int) bool {$/;"	f
+is_tab	yamlprivateh.go	/^func is_tab(b []byte, i int) bool {$/;"	f
+is_z	yamlprivateh.go	/^func is_z(b []byte, i int) bool {$/;"	f
+keyFloat	sorter.go	/^func keyFloat(v reflect.Value) (f float64, ok bool) {$/;"	f
+keyList	sorter.go	/^type keyList []reflect.Value$/;"	t
+longTagPrefix	resolve.go	/^const longTagPrefix = "tag:yaml.org,2002:"$/;"	c
+mapping	decode.go	/^func (d *decoder) mapping(n *node, out reflect.Value) (good bool) {$/;"	f
+mapping	decode.go	/^func (p *parser) mapping() *node {$/;"	f
+mappingNode	decode.go	/^	mappingNode$/;"	c
+mappingStruct	decode.go	/^func (d *decoder) mappingStruct(n *node, out reflect.Value) (good bool) {$/;"	f
+mapping_style	yamlh.go	/^func (e *yaml_event_t) mapping_style() yaml_mapping_style_t   { return yaml_mapping_style_t(e.style) }$/;"	f
+mappingv	encode.go	/^func (e *encoder) mappingv(tag string, f func()) {$/;"	f
+mapv	encode.go	/^func (e *encoder) mapv(tag string, in reflect.Value) {$/;"	f
+marshal	encode.go	/^func (e *encoder) marshal(tag string, in reflect.Value) {$/;"	f
+marshalErrorTests	encode_test.go	/^var marshalErrorTests = []struct {$/;"	v
+marshalIntTest	encode_test.go	/^var marshalIntTest = 123$/;"	v
+marshalTaggedIfaceTest	encode_test.go	/^var marshalTaggedIfaceTest interface{} = &struct{ A string }{"B"}$/;"	v
+marshalTests	encode_test.go	/^var marshalTests = []struct {$/;"	v
+max_number_length	scannerc.go	/^const max_number_length = 2$/;"	c
+must	encode.go	/^func (e *encoder) must(ok bool) {$/;"	f
+newDecoder	decode.go	/^func newDecoder() *decoder {$/;"	f
+newEncoder	encode.go	/^func newEncoder() (e *encoder) {$/;"	f
+newParser	decode.go	/^func newParser(b []byte) *parser {$/;"	f
+nilv	encode.go	/^func (e *encoder) nilv() {$/;"	f
+node	decode.go	/^func (p *parser) node(kind int) *node {$/;"	f
+node	decode.go	/^type node struct {$/;"	t
+numLess	sorter.go	/^func numLess(a, b reflect.Value) bool {$/;"	f
+output_buffer_size	yamlprivateh.go	/^	output_buffer_size = 128$/;"	c
+output_raw_buffer_size	yamlprivateh.go	/^	output_raw_buffer_size = (output_buffer_size*2 + 2)$/;"	c
+parse	decode.go	/^func (p *parser) parse() *node {$/;"	f
+parser	decode.go	/^type parser struct {$/;"	t
+peek_token	parserc.go	/^func peek_token(parser *yaml_parser_t) *yaml_token_t {$/;"	f
+put	emitterc.go	/^func put(emitter *yaml_emitter_t, value byte) bool {$/;"	f
+put_break	emitterc.go	/^func put_break(emitter *yaml_emitter_t) bool {$/;"	f
+read	scannerc.go	/^func read(parser *yaml_parser_t, s []byte) []byte {$/;"	f
+read_line	scannerc.go	/^func read_line(parser *yaml_parser_t, s []byte) []byte {$/;"	f
+resolvableTag	resolve.go	/^func resolvableTag(tag string) bool {$/;"	f
+resolve	resolve.go	/^func resolve(tag string, in string) (rtag string, out interface{}) {$/;"	f
+resolveMap	resolve.go	/^var resolveMap = make(map[string]resolveMapItem)$/;"	v
+resolveMapItem	resolve.go	/^type resolveMapItem struct {$/;"	t
+resolveTable	resolve.go	/^var resolveTable = make([]byte, 256)$/;"	v
+scalar	decode.go	/^func (d *decoder) scalar(n *node, out reflect.Value) (good bool) {$/;"	f
+scalar	decode.go	/^func (p *parser) scalar() *node {$/;"	f
+scalarNode	decode.go	/^	scalarNode$/;"	c
+scalar_style	yamlh.go	/^func (e *yaml_event_t) scalar_style() yaml_scalar_style_t     { return yaml_scalar_style_t(e.style) }$/;"	f
+sequence	decode.go	/^func (d *decoder) sequence(n *node, out reflect.Value) (good bool) {$/;"	f
+sequence	decode.go	/^func (p *parser) sequence() *node {$/;"	f
+sequenceNode	decode.go	/^	sequenceNode$/;"	c
+sequence_style	yamlh.go	/^func (e *yaml_event_t) sequence_style() yaml_sequence_style_t { return yaml_sequence_style_t(e.style) }$/;"	f
+settableValueOf	decode.go	/^func settableValueOf(i interface{}) reflect.Value {$/;"	f
+setter	decode.go	/^func (d *decoder) setter(tag string, out *reflect.Value, good *bool) (set func()) {$/;"	f
+setterResult	decode_test.go	/^var setterResult = map[int]bool{}$/;"	v
+setterTests	decode_test.go	/^var setterTests = []struct {$/;"	v
+shortTag	resolve.go	/^func shortTag(tag string) string {$/;"	f
+skip	decode.go	/^func (p *parser) skip() {$/;"	f
+skip	scannerc.go	/^func skip(parser *yaml_parser_t) {$/;"	f
+skip_line	scannerc.go	/^func skip_line(parser *yaml_parser_t) {$/;"	f
+skip_token	parserc.go	/^func skip_token(parser *yaml_parser_t) {$/;"	f
+slicev	encode.go	/^func (e *encoder) slicev(tag string, in reflect.Value) {$/;"	f
+stringv	encode.go	/^func (e *encoder) stringv(tag string, in reflect.Value) {$/;"	f
+structInfo	goyaml.go	/^type structInfo struct {$/;"	t
+structMap	goyaml.go	/^var structMap = make(map[reflect.Type]*structInfo)$/;"	v
+structv	encode.go	/^func (e *encoder) structv(tag string, in reflect.Value) {$/;"	f
+trace	scannerc.go	/^func trace(args ...interface{}) func() {$/;"	f
+typeWithGetter	encode_test.go	/^type typeWithGetter struct {$/;"	t
+typeWithGetterField	encode_test.go	/^type typeWithGetterField struct {$/;"	t
+typeWithSetter	decode_test.go	/^type typeWithSetter struct {$/;"	t
+typeWithSetterField	decode_test.go	/^type typeWithSetterField struct {$/;"	t
+uintv	encode.go	/^func (e *encoder) uintv(tag string, in reflect.Value) {$/;"	f
+unmarshal	decode.go	/^func (d *decoder) unmarshal(n *node, out reflect.Value) (good bool) {$/;"	f
+unmarshalErrorTests	decode_test.go	/^var unmarshalErrorTests = []struct {$/;"	v
+unmarshalIntTest	decode_test.go	/^var unmarshalIntTest = 123$/;"	v
+unmarshalTests	decode_test.go	/^var unmarshalTests = []struct {$/;"	v
+width	yamlprivateh.go	/^func width(b byte) int {$/;"	f
+write	emitterc.go	/^func write(emitter *yaml_emitter_t, s []byte, i *int) bool {$/;"	f
+write_all	emitterc.go	/^func write_all(emitter *yaml_emitter_t, s []byte) bool {$/;"	f
+write_break	emitterc.go	/^func write_break(emitter *yaml_emitter_t, s []byte, i *int) bool {$/;"	f
+yaml_ALIAS_EVENT	yamlh.go	/^	yaml_ALIAS_EVENT          \/\/ An ALIAS event.$/;"	c
+yaml_ALIAS_TOKEN	yamlh.go	/^	yaml_ALIAS_TOKEN  \/\/ An ALIAS token.$/;"	c
+yaml_ANCHOR_TOKEN	yamlh.go	/^	yaml_ANCHOR_TOKEN \/\/ An ANCHOR token.$/;"	c
+yaml_ANY_BREAK	yamlh.go	/^	yaml_ANY_BREAK yaml_break_t = iota$/;"	c
+yaml_ANY_ENCODING	yamlh.go	/^	yaml_ANY_ENCODING yaml_encoding_t = iota$/;"	c
+yaml_ANY_MAPPING_STYLE	yamlh.go	/^	yaml_ANY_MAPPING_STYLE yaml_mapping_style_t = iota$/;"	c
+yaml_ANY_SCALAR_STYLE	yamlh.go	/^	yaml_ANY_SCALAR_STYLE yaml_scalar_style_t = iota$/;"	c
+yaml_ANY_SEQUENCE_STYLE	yamlh.go	/^	yaml_ANY_SEQUENCE_STYLE yaml_sequence_style_t = iota$/;"	c
+yaml_BLOCK_END_TOKEN	yamlh.go	/^	yaml_BLOCK_END_TOKEN            \/\/ A BLOCK-END token.$/;"	c
+yaml_BLOCK_ENTRY_TOKEN	yamlh.go	/^	yaml_BLOCK_ENTRY_TOKEN \/\/ A BLOCK-ENTRY token.$/;"	c
+yaml_BLOCK_MAPPING_START_TOKEN	yamlh.go	/^	yaml_BLOCK_MAPPING_START_TOKEN  \/\/ A BLOCK-SEQUENCE-END token.$/;"	c
+yaml_BLOCK_MAPPING_STYLE	yamlh.go	/^	yaml_BLOCK_MAPPING_STYLE \/\/ The block mapping style.$/;"	c
+yaml_BLOCK_SEQUENCE_START_TOKEN	yamlh.go	/^	yaml_BLOCK_SEQUENCE_START_TOKEN \/\/ A BLOCK-SEQUENCE-START token.$/;"	c
+yaml_BLOCK_SEQUENCE_STYLE	yamlh.go	/^	yaml_BLOCK_SEQUENCE_STYLE \/\/ The block sequence style.$/;"	c
+yaml_BOOL_TAG	yamlh.go	/^	yaml_BOOL_TAG      = "tag:yaml.org,2002:bool"      \/\/ The tag !!bool with the values: true and false.$/;"	c
+yaml_COMPOSER_ERROR	yamlh.go	/^	yaml_COMPOSER_ERROR \/\/ Cannot compose a YAML document.$/;"	c
+yaml_CRLN_BREAK	yamlh.go	/^	yaml_CRLN_BREAK \/\/ Use CR LN for line breaks (DOS style).$/;"	c
+yaml_CR_BREAK	yamlh.go	/^	yaml_CR_BREAK   \/\/ Use CR for line breaks (Mac style).$/;"	c
+yaml_DEFAULT_MAPPING_TAG	yamlh.go	/^	yaml_DEFAULT_MAPPING_TAG  = yaml_MAP_TAG \/\/ The default mapping tag is !!map.$/;"	c
+yaml_DEFAULT_SCALAR_TAG	yamlh.go	/^	yaml_DEFAULT_SCALAR_TAG   = yaml_STR_TAG \/\/ The default scalar tag is !!str.$/;"	c
+yaml_DEFAULT_SEQUENCE_TAG	yamlh.go	/^	yaml_DEFAULT_SEQUENCE_TAG = yaml_SEQ_TAG \/\/ The default sequence tag is !!seq.$/;"	c
+yaml_DOCUMENT_END_EVENT	yamlh.go	/^	yaml_DOCUMENT_END_EVENT   \/\/ A DOCUMENT-END event.$/;"	c
+yaml_DOCUMENT_END_TOKEN	yamlh.go	/^	yaml_DOCUMENT_END_TOKEN      \/\/ A DOCUMENT-END token.$/;"	c
+yaml_DOCUMENT_START_EVENT	yamlh.go	/^	yaml_DOCUMENT_START_EVENT \/\/ A DOCUMENT-START event.$/;"	c
+yaml_DOCUMENT_START_TOKEN	yamlh.go	/^	yaml_DOCUMENT_START_TOKEN    \/\/ A DOCUMENT-START token.$/;"	c
+yaml_DOUBLE_QUOTED_SCALAR_STYLE	yamlh.go	/^	yaml_DOUBLE_QUOTED_SCALAR_STYLE \/\/ The double-quoted scalar style.$/;"	c
+yaml_EMITTER_ERROR	yamlh.go	/^	yaml_EMITTER_ERROR  \/\/ Cannot emit a YAML stream.$/;"	c
+yaml_EMIT_BLOCK_MAPPING_FIRST_KEY_STATE	yamlh.go	/^	yaml_EMIT_BLOCK_MAPPING_FIRST_KEY_STATE    \/\/ Expect the first key of a block mapping.$/;"	c
+yaml_EMIT_BLOCK_MAPPING_KEY_STATE	yamlh.go	/^	yaml_EMIT_BLOCK_MAPPING_KEY_STATE          \/\/ Expect the key of a block mapping.$/;"	c
+yaml_EMIT_BLOCK_MAPPING_SIMPLE_VALUE_STATE	yamlh.go	/^	yaml_EMIT_BLOCK_MAPPING_SIMPLE_VALUE_STATE \/\/ Expect a value for a simple key of a block mapping.$/;"	c
+yaml_EMIT_BLOCK_MAPPING_VALUE_STATE	yamlh.go	/^	yaml_EMIT_BLOCK_MAPPING_VALUE_STATE        \/\/ Expect a value of a block mapping.$/;"	c
+yaml_EMIT_BLOCK_SEQUENCE_FIRST_ITEM_STATE	yamlh.go	/^	yaml_EMIT_BLOCK_SEQUENCE_FIRST_ITEM_STATE  \/\/ Expect the first item of a block sequence.$/;"	c
+yaml_EMIT_BLOCK_SEQUENCE_ITEM_STATE	yamlh.go	/^	yaml_EMIT_BLOCK_SEQUENCE_ITEM_STATE        \/\/ Expect an item of a block sequence.$/;"	c
+yaml_EMIT_DOCUMENT_CONTENT_STATE	yamlh.go	/^	yaml_EMIT_DOCUMENT_CONTENT_STATE           \/\/ Expect the content of a document.$/;"	c
+yaml_EMIT_DOCUMENT_END_STATE	yamlh.go	/^	yaml_EMIT_DOCUMENT_END_STATE               \/\/ Expect DOCUMENT-END.$/;"	c
+yaml_EMIT_DOCUMENT_START_STATE	yamlh.go	/^	yaml_EMIT_DOCUMENT_START_STATE             \/\/ Expect DOCUMENT-START or STREAM-END.$/;"	c
+yaml_EMIT_END_STATE	yamlh.go	/^	yaml_EMIT_END_STATE                        \/\/ Expect nothing.$/;"	c
+yaml_EMIT_FIRST_DOCUMENT_START_STATE	yamlh.go	/^	yaml_EMIT_FIRST_DOCUMENT_START_STATE       \/\/ Expect the first DOCUMENT-START or STREAM-END.$/;"	c
+yaml_EMIT_FLOW_MAPPING_FIRST_KEY_STATE	yamlh.go	/^	yaml_EMIT_FLOW_MAPPING_FIRST_KEY_STATE     \/\/ Expect the first key of a flow mapping.$/;"	c
+yaml_EMIT_FLOW_MAPPING_KEY_STATE	yamlh.go	/^	yaml_EMIT_FLOW_MAPPING_KEY_STATE           \/\/ Expect a key of a flow mapping.$/;"	c
+yaml_EMIT_FLOW_MAPPING_SIMPLE_VALUE_STATE	yamlh.go	/^	yaml_EMIT_FLOW_MAPPING_SIMPLE_VALUE_STATE  \/\/ Expect a value for a simple key of a flow mapping.$/;"	c
+yaml_EMIT_FLOW_MAPPING_VALUE_STATE	yamlh.go	/^	yaml_EMIT_FLOW_MAPPING_VALUE_STATE         \/\/ Expect a value of a flow mapping.$/;"	c
+yaml_EMIT_FLOW_SEQUENCE_FIRST_ITEM_STATE	yamlh.go	/^	yaml_EMIT_FLOW_SEQUENCE_FIRST_ITEM_STATE   \/\/ Expect the first item of a flow sequence.$/;"	c
+yaml_EMIT_FLOW_SEQUENCE_ITEM_STATE	yamlh.go	/^	yaml_EMIT_FLOW_SEQUENCE_ITEM_STATE         \/\/ Expect an item of a flow sequence.$/;"	c
+yaml_EMIT_STREAM_START_STATE	yamlh.go	/^	yaml_EMIT_STREAM_START_STATE yaml_emitter_state_t = iota$/;"	c
+yaml_FLOAT_TAG	yamlh.go	/^	yaml_FLOAT_TAG     = "tag:yaml.org,2002:float"     \/\/ The tag !!float for float values.$/;"	c
+yaml_FLOW_ENTRY_TOKEN	yamlh.go	/^	yaml_FLOW_ENTRY_TOKEN  \/\/ A FLOW-ENTRY token.$/;"	c
+yaml_FLOW_MAPPING_END_TOKEN	yamlh.go	/^	yaml_FLOW_MAPPING_END_TOKEN    \/\/ A FLOW-MAPPING-END token.$/;"	c
+yaml_FLOW_MAPPING_START_TOKEN	yamlh.go	/^	yaml_FLOW_MAPPING_START_TOKEN  \/\/ A FLOW-MAPPING-START token.$/;"	c
+yaml_FLOW_MAPPING_STYLE	yamlh.go	/^	yaml_FLOW_MAPPING_STYLE  \/\/ The flow mapping style.$/;"	c
+yaml_FLOW_SEQUENCE_END_TOKEN	yamlh.go	/^	yaml_FLOW_SEQUENCE_END_TOKEN   \/\/ A FLOW-SEQUENCE-END token.$/;"	c
+yaml_FLOW_SEQUENCE_START_TOKEN	yamlh.go	/^	yaml_FLOW_SEQUENCE_START_TOKEN \/\/ A FLOW-SEQUENCE-START token.$/;"	c
+yaml_FLOW_SEQUENCE_STYLE	yamlh.go	/^	yaml_FLOW_SEQUENCE_STYLE  \/\/ The flow sequence style.$/;"	c
+yaml_FOLDED_SCALAR_STYLE	yamlh.go	/^	yaml_FOLDED_SCALAR_STYLE        \/\/ The folded scalar style.$/;"	c
+yaml_INT_TAG	yamlh.go	/^	yaml_INT_TAG       = "tag:yaml.org,2002:int"       \/\/ The tag !!int for integer values.$/;"	c
+yaml_KEY_TOKEN	yamlh.go	/^	yaml_KEY_TOKEN         \/\/ A KEY token.$/;"	c
+yaml_LITERAL_SCALAR_STYLE	yamlh.go	/^	yaml_LITERAL_SCALAR_STYLE       \/\/ The literal scalar style.$/;"	c
+yaml_LN_BREAK	yamlh.go	/^	yaml_LN_BREAK   \/\/ Use LN for line breaks (Unix style).$/;"	c
+yaml_MAPPING_END_EVENT	yamlh.go	/^	yaml_MAPPING_END_EVENT    \/\/ A MAPPING-END event.$/;"	c
+yaml_MAPPING_NODE	yamlh.go	/^	yaml_MAPPING_NODE  \/\/ A mapping node.$/;"	c
+yaml_MAPPING_START_EVENT	yamlh.go	/^	yaml_MAPPING_START_EVENT  \/\/ A MAPPING-START event.$/;"	c
+yaml_MAP_TAG	yamlh.go	/^	yaml_MAP_TAG = "tag:yaml.org,2002:map" \/\/ The tag !!map is used to denote mapping.$/;"	c
+yaml_MEMORY_ERROR	yamlh.go	/^	yaml_MEMORY_ERROR   \/\/ Cannot allocate or reallocate a block of memory.$/;"	c
+yaml_NO_ERROR	yamlh.go	/^	yaml_NO_ERROR yaml_error_type_t = iota$/;"	c
+yaml_NO_EVENT	yamlh.go	/^	yaml_NO_EVENT yaml_event_type_t = iota$/;"	c
+yaml_NO_NODE	yamlh.go	/^	yaml_NO_NODE yaml_node_type_t = iota$/;"	c
+yaml_NO_TOKEN	yamlh.go	/^	yaml_NO_TOKEN yaml_token_type_t = iota$/;"	c
+yaml_NULL_TAG	yamlh.go	/^	yaml_NULL_TAG      = "tag:yaml.org,2002:null"      \/\/ The tag !!null with the only possible value: null.$/;"	c
+yaml_PARSER_ERROR	yamlh.go	/^	yaml_PARSER_ERROR   \/\/ Cannot parse the input stream.$/;"	c
+yaml_PARSE_BLOCK_MAPPING_FIRST_KEY_STATE	yamlh.go	/^	yaml_PARSE_BLOCK_MAPPING_FIRST_KEY_STATE           \/\/ Expect the first key of a block mapping.$/;"	c
+yaml_PARSE_BLOCK_MAPPING_KEY_STATE	yamlh.go	/^	yaml_PARSE_BLOCK_MAPPING_KEY_STATE                 \/\/ Expect a block mapping key.$/;"	c
+yaml_PARSE_BLOCK_MAPPING_VALUE_STATE	yamlh.go	/^	yaml_PARSE_BLOCK_MAPPING_VALUE_STATE               \/\/ Expect a block mapping value.$/;"	c
+yaml_PARSE_BLOCK_NODE_OR_INDENTLESS_SEQUENCE_STATE	yamlh.go	/^	yaml_PARSE_BLOCK_NODE_OR_INDENTLESS_SEQUENCE_STATE \/\/ Expect a block node or indentless sequence.$/;"	c
+yaml_PARSE_BLOCK_NODE_STATE	yamlh.go	/^	yaml_PARSE_BLOCK_NODE_STATE                        \/\/ Expect a block node.$/;"	c
+yaml_PARSE_BLOCK_SEQUENCE_ENTRY_STATE	yamlh.go	/^	yaml_PARSE_BLOCK_SEQUENCE_ENTRY_STATE              \/\/ Expect an entry of a block sequence.$/;"	c
+yaml_PARSE_BLOCK_SEQUENCE_FIRST_ENTRY_STATE	yamlh.go	/^	yaml_PARSE_BLOCK_SEQUENCE_FIRST_ENTRY_STATE        \/\/ Expect the first entry of a block sequence.$/;"	c
+yaml_PARSE_DOCUMENT_CONTENT_STATE	yamlh.go	/^	yaml_PARSE_DOCUMENT_CONTENT_STATE                  \/\/ Expect the content of a document.$/;"	c
+yaml_PARSE_DOCUMENT_END_STATE	yamlh.go	/^	yaml_PARSE_DOCUMENT_END_STATE                      \/\/ Expect DOCUMENT-END.$/;"	c
+yaml_PARSE_DOCUMENT_START_STATE	yamlh.go	/^	yaml_PARSE_DOCUMENT_START_STATE                    \/\/ Expect DOCUMENT-START.$/;"	c
+yaml_PARSE_END_STATE	yamlh.go	/^	yaml_PARSE_END_STATE                               \/\/ Expect nothing.$/;"	c
+yaml_PARSE_FLOW_MAPPING_EMPTY_VALUE_STATE	yamlh.go	/^	yaml_PARSE_FLOW_MAPPING_EMPTY_VALUE_STATE          \/\/ Expect an empty value of a flow mapping.$/;"	c
+yaml_PARSE_FLOW_MAPPING_FIRST_KEY_STATE	yamlh.go	/^	yaml_PARSE_FLOW_MAPPING_FIRST_KEY_STATE            \/\/ Expect the first key of a flow mapping.$/;"	c
+yaml_PARSE_FLOW_MAPPING_KEY_STATE	yamlh.go	/^	yaml_PARSE_FLOW_MAPPING_KEY_STATE                  \/\/ Expect a key of a flow mapping.$/;"	c
+yaml_PARSE_FLOW_MAPPING_VALUE_STATE	yamlh.go	/^	yaml_PARSE_FLOW_MAPPING_VALUE_STATE                \/\/ Expect a value of a flow mapping.$/;"	c
+yaml_PARSE_FLOW_NODE_STATE	yamlh.go	/^	yaml_PARSE_FLOW_NODE_STATE                         \/\/ Expect a flow node.$/;"	c
+yaml_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_END_STATE	yamlh.go	/^	yaml_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_END_STATE   \/\/ Expect the and of an ordered mapping entry.$/;"	c
+yaml_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_KEY_STATE	yamlh.go	/^	yaml_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_KEY_STATE   \/\/ Expect a key of an ordered mapping.$/;"	c
+yaml_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_VALUE_STATE	yamlh.go	/^	yaml_PARSE_FLOW_SEQUENCE_ENTRY_MAPPING_VALUE_STATE \/\/ Expect a value of an ordered mapping.$/;"	c
+yaml_PARSE_FLOW_SEQUENCE_ENTRY_STATE	yamlh.go	/^	yaml_PARSE_FLOW_SEQUENCE_ENTRY_STATE               \/\/ Expect an entry of a flow sequence.$/;"	c
+yaml_PARSE_FLOW_SEQUENCE_FIRST_ENTRY_STATE	yamlh.go	/^	yaml_PARSE_FLOW_SEQUENCE_FIRST_ENTRY_STATE         \/\/ Expect the first entry of a flow sequence.$/;"	c
+yaml_PARSE_IMPLICIT_DOCUMENT_START_STATE	yamlh.go	/^	yaml_PARSE_IMPLICIT_DOCUMENT_START_STATE           \/\/ Expect the beginning of an implicit document.$/;"	c
+yaml_PARSE_INDENTLESS_SEQUENCE_ENTRY_STATE	yamlh.go	/^	yaml_PARSE_INDENTLESS_SEQUENCE_ENTRY_STATE         \/\/ Expect an entry of an indentless sequence.$/;"	c
+yaml_PARSE_STREAM_START_STATE	yamlh.go	/^	yaml_PARSE_STREAM_START_STATE yaml_parser_state_t = iota$/;"	c
+yaml_PLAIN_SCALAR_STYLE	yamlh.go	/^	yaml_PLAIN_SCALAR_STYLE         \/\/ The plain scalar style.$/;"	c
+yaml_READER_ERROR	yamlh.go	/^	yaml_READER_ERROR   \/\/ Cannot read or decode the input stream.$/;"	c
+yaml_SCALAR_EVENT	yamlh.go	/^	yaml_SCALAR_EVENT         \/\/ A SCALAR event.$/;"	c
+yaml_SCALAR_NODE	yamlh.go	/^	yaml_SCALAR_NODE   \/\/ A scalar node.$/;"	c
+yaml_SCALAR_TOKEN	yamlh.go	/^	yaml_SCALAR_TOKEN \/\/ A SCALAR token.$/;"	c
+yaml_SCANNER_ERROR	yamlh.go	/^	yaml_SCANNER_ERROR  \/\/ Cannot scan the input stream.$/;"	c
+yaml_SEQUENCE_END_EVENT	yamlh.go	/^	yaml_SEQUENCE_END_EVENT   \/\/ A SEQUENCE-END event.$/;"	c
+yaml_SEQUENCE_NODE	yamlh.go	/^	yaml_SEQUENCE_NODE \/\/ A sequence node.$/;"	c
+yaml_SEQUENCE_START_EVENT	yamlh.go	/^	yaml_SEQUENCE_START_EVENT \/\/ A SEQUENCE-START event.$/;"	c
+yaml_SEQ_TAG	yamlh.go	/^	yaml_SEQ_TAG = "tag:yaml.org,2002:seq" \/\/ The tag !!seq is used to denote sequences.$/;"	c
+yaml_SINGLE_QUOTED_SCALAR_STYLE	yamlh.go	/^	yaml_SINGLE_QUOTED_SCALAR_STYLE \/\/ The single-quoted scalar style.$/;"	c
+yaml_STREAM_END_EVENT	yamlh.go	/^	yaml_STREAM_END_EVENT     \/\/ A STREAM-END event.$/;"	c
+yaml_STREAM_END_TOKEN	yamlh.go	/^	yaml_STREAM_END_TOKEN   \/\/ A STREAM-END token.$/;"	c
+yaml_STREAM_START_EVENT	yamlh.go	/^	yaml_STREAM_START_EVENT   \/\/ A STREAM-START event.$/;"	c
+yaml_STREAM_START_TOKEN	yamlh.go	/^	yaml_STREAM_START_TOKEN \/\/ A STREAM-START token.$/;"	c
+yaml_STR_TAG	yamlh.go	/^	yaml_STR_TAG       = "tag:yaml.org,2002:str"       \/\/ The tag !!str for string values.$/;"	c
+yaml_TAG_DIRECTIVE_TOKEN	yamlh.go	/^	yaml_TAG_DIRECTIVE_TOKEN     \/\/ A TAG-DIRECTIVE token.$/;"	c
+yaml_TAG_TOKEN	yamlh.go	/^	yaml_TAG_TOKEN    \/\/ A TAG token.$/;"	c
+yaml_TIMESTAMP_TAG	yamlh.go	/^	yaml_TIMESTAMP_TAG = "tag:yaml.org,2002:timestamp" \/\/ The tag !!timestamp for date and time values.$/;"	c
+yaml_UTF16BE_ENCODING	yamlh.go	/^	yaml_UTF16BE_ENCODING \/\/ The UTF-16-BE encoding with BOM.$/;"	c
+yaml_UTF16LE_ENCODING	yamlh.go	/^	yaml_UTF16LE_ENCODING \/\/ The UTF-16-LE encoding with BOM.$/;"	c
+yaml_UTF8_ENCODING	yamlh.go	/^	yaml_UTF8_ENCODING    \/\/ The default UTF-8 encoding.$/;"	c
+yaml_VALUE_TOKEN	yamlh.go	/^	yaml_VALUE_TOKEN       \/\/ A VALUE token.$/;"	c
+yaml_VERSION_DIRECTIVE_TOKEN	yamlh.go	/^	yaml_VERSION_DIRECTIVE_TOKEN \/\/ A VERSION-DIRECTIVE token.$/;"	c
+yaml_WRITER_ERROR	yamlh.go	/^	yaml_WRITER_ERROR   \/\/ Cannot write to the output stream.$/;"	c
+yaml_alias_data_t	yamlh.go	/^type yaml_alias_data_t struct {$/;"	t
+yaml_break_t	yamlh.go	/^type yaml_break_t int$/;"	t
+yaml_document_end_event_initialize	apic.go	/^func yaml_document_end_event_initialize(event *yaml_event_t, implicit bool) bool {$/;"	f
+yaml_document_start_event_initialize	apic.go	/^func yaml_document_start_event_initialize(event *yaml_event_t, version_directive *yaml_version_directive_t,$/;"	f
+yaml_document_t	yamlh.go	/^type yaml_document_t struct {$/;"	t
+yaml_emitter_analyze_anchor	emitterc.go	/^func yaml_emitter_analyze_anchor(emitter *yaml_emitter_t, anchor []byte, alias bool) bool {$/;"	f
+yaml_emitter_analyze_event	emitterc.go	/^func yaml_emitter_analyze_event(emitter *yaml_emitter_t, event *yaml_event_t) bool {$/;"	f
+yaml_emitter_analyze_scalar	emitterc.go	/^func yaml_emitter_analyze_scalar(emitter *yaml_emitter_t, value []byte) bool {$/;"	f
+yaml_emitter_analyze_tag	emitterc.go	/^func yaml_emitter_analyze_tag(emitter *yaml_emitter_t, tag []byte) bool {$/;"	f
+yaml_emitter_analyze_tag_directive	emitterc.go	/^func yaml_emitter_analyze_tag_directive(emitter *yaml_emitter_t, tag_directive *yaml_tag_directive_t) bool {$/;"	f
+yaml_emitter_analyze_version_directive	emitterc.go	/^func yaml_emitter_analyze_version_directive(emitter *yaml_emitter_t, version_directive *yaml_version_directive_t) bool {$/;"	f
+yaml_emitter_append_tag_directive	emitterc.go	/^func yaml_emitter_append_tag_directive(emitter *yaml_emitter_t, value *yaml_tag_directive_t, allow_duplicates bool) bool {$/;"	f
+yaml_emitter_check_empty_document	emitterc.go	/^func yaml_emitter_check_empty_document(emitter *yaml_emitter_t) bool {$/;"	f
+yaml_emitter_check_empty_mapping	emitterc.go	/^func yaml_emitter_check_empty_mapping(emitter *yaml_emitter_t) bool {$/;"	f
+yaml_emitter_check_empty_sequence	emitterc.go	/^func yaml_emitter_check_empty_sequence(emitter *yaml_emitter_t) bool {$/;"	f
+yaml_emitter_check_simple_key	emitterc.go	/^func yaml_emitter_check_simple_key(emitter *yaml_emitter_t) bool {$/;"	f
+yaml_emitter_delete	apic.go	/^func yaml_emitter_delete(emitter *yaml_emitter_t) {$/;"	f
+yaml_emitter_emit	emitterc.go	/^func yaml_emitter_emit(emitter *yaml_emitter_t, event *yaml_event_t) bool {$/;"	f
+yaml_emitter_emit_alias	emitterc.go	/^func yaml_emitter_emit_alias(emitter *yaml_emitter_t, event *yaml_event_t) bool {$/;"	f
+yaml_emitter_emit_block_mapping_key	emitterc.go	/^func yaml_emitter_emit_block_mapping_key(emitter *yaml_emitter_t, event *yaml_event_t, first bool) bool {$/;"	f
+yaml_emitter_emit_block_mapping_value	emitterc.go	/^func yaml_emitter_emit_block_mapping_value(emitter *yaml_emitter_t, event *yaml_event_t, simple bool) bool {$/;"	f
+yaml_emitter_emit_block_sequence_item	emitterc.go	/^func yaml_emitter_emit_block_sequence_item(emitter *yaml_emitter_t, event *yaml_event_t, first bool) bool {$/;"	f
+yaml_emitter_emit_document_content	emitterc.go	/^func yaml_emitter_emit_document_content(emitter *yaml_emitter_t, event *yaml_event_t) bool {$/;"	f
+yaml_emitter_emit_document_end	emitterc.go	/^func yaml_emitter_emit_document_end(emitter *yaml_emitter_t, event *yaml_event_t) bool {$/;"	f
+yaml_emitter_emit_document_start	emitterc.go	/^func yaml_emitter_emit_document_start(emitter *yaml_emitter_t, event *yaml_event_t, first bool) bool {$/;"	f
+yaml_emitter_emit_flow_mapping_key	emitterc.go	/^func yaml_emitter_emit_flow_mapping_key(emitter *yaml_emitter_t, event *yaml_event_t, first bool) bool {$/;"	f
+yaml_emitter_emit_flow_mapping_value	emitterc.go	/^func yaml_emitter_emit_flow_mapping_value(emitter *yaml_emitter_t, event *yaml_event_t, simple bool) bool {$/;"	f
+yaml_emitter_emit_flow_sequence_item	emitterc.go	/^func yaml_emitter_emit_flow_sequence_item(emitter *yaml_emitter_t, event *yaml_event_t, first bool) bool {$/;"	f
+yaml_emitter_emit_mapping_start	emitterc.go	/^func yaml_emitter_emit_mapping_start(emitter *yaml_emitter_t, event *yaml_event_t) bool {$/;"	f
+yaml_emitter_emit_node	emitterc.go	/^func yaml_emitter_emit_node(emitter *yaml_emitter_t, event *yaml_event_t,$/;"	f
+yaml_emitter_emit_scalar	emitterc.go	/^func yaml_emitter_emit_scalar(emitter *yaml_emitter_t, event *yaml_event_t) bool {$/;"	f
+yaml_emitter_emit_sequence_start	emitterc.go	/^func yaml_emitter_emit_sequence_start(emitter *yaml_emitter_t, event *yaml_event_t) bool {$/;"	f
+yaml_emitter_emit_stream_start	emitterc.go	/^func yaml_emitter_emit_stream_start(emitter *yaml_emitter_t, event *yaml_event_t) bool {$/;"	f
+yaml_emitter_flush	writerc.go	/^func yaml_emitter_flush(emitter *yaml_emitter_t) bool {$/;"	f
+yaml_emitter_increase_indent	emitterc.go	/^func yaml_emitter_increase_indent(emitter *yaml_emitter_t, flow, indentless bool) bool {$/;"	f
+yaml_emitter_initialize	apic.go	/^func yaml_emitter_initialize(emitter *yaml_emitter_t) bool {$/;"	f
+yaml_emitter_need_more_events	emitterc.go	/^func yaml_emitter_need_more_events(emitter *yaml_emitter_t) bool {$/;"	f
+yaml_emitter_process_anchor	emitterc.go	/^func yaml_emitter_process_anchor(emitter *yaml_emitter_t) bool {$/;"	f
+yaml_emitter_process_scalar	emitterc.go	/^func yaml_emitter_process_scalar(emitter *yaml_emitter_t) bool {$/;"	f
+yaml_emitter_process_tag	emitterc.go	/^func yaml_emitter_process_tag(emitter *yaml_emitter_t) bool {$/;"	f
+yaml_emitter_select_scalar_style	emitterc.go	/^func yaml_emitter_select_scalar_style(emitter *yaml_emitter_t, event *yaml_event_t) bool {$/;"	f
+yaml_emitter_set_break	apic.go	/^func yaml_emitter_set_break(emitter *yaml_emitter_t, line_break yaml_break_t) {$/;"	f
+yaml_emitter_set_canonical	apic.go	/^func yaml_emitter_set_canonical(emitter *yaml_emitter_t, canonical bool) {$/;"	f
+yaml_emitter_set_emitter_error	emitterc.go	/^func yaml_emitter_set_emitter_error(emitter *yaml_emitter_t, problem string) bool {$/;"	f
+yaml_emitter_set_encoding	apic.go	/^func yaml_emitter_set_encoding(emitter *yaml_emitter_t, encoding yaml_encoding_t) {$/;"	f
+yaml_emitter_set_indent	apic.go	/^func yaml_emitter_set_indent(emitter *yaml_emitter_t, indent int) {$/;"	f
+yaml_emitter_set_output_file	apic.go	/^func yaml_emitter_set_output_file(emitter *yaml_emitter_t, file io.Writer) {$/;"	f
+yaml_emitter_set_output_string	apic.go	/^func yaml_emitter_set_output_string(emitter *yaml_emitter_t, output_buffer *[]byte) {$/;"	f
+yaml_emitter_set_unicode	apic.go	/^func yaml_emitter_set_unicode(emitter *yaml_emitter_t, unicode bool) {$/;"	f
+yaml_emitter_set_width	apic.go	/^func yaml_emitter_set_width(emitter *yaml_emitter_t, width int) {$/;"	f
+yaml_emitter_set_writer_error	writerc.go	/^func yaml_emitter_set_writer_error(emitter *yaml_emitter_t, problem string) bool {$/;"	f
+yaml_emitter_state_machine	emitterc.go	/^func yaml_emitter_state_machine(emitter *yaml_emitter_t, event *yaml_event_t) bool {$/;"	f
+yaml_emitter_state_t	yamlh.go	/^type yaml_emitter_state_t int$/;"	t
+yaml_emitter_t	yamlh.go	/^type yaml_emitter_t struct {$/;"	t
+yaml_emitter_write_anchor	emitterc.go	/^func yaml_emitter_write_anchor(emitter *yaml_emitter_t, value []byte) bool {$/;"	f
+yaml_emitter_write_block_scalar_hints	emitterc.go	/^func yaml_emitter_write_block_scalar_hints(emitter *yaml_emitter_t, value []byte) bool {$/;"	f
+yaml_emitter_write_bom	emitterc.go	/^func yaml_emitter_write_bom(emitter *yaml_emitter_t) bool {$/;"	f
+yaml_emitter_write_double_quoted_scalar	emitterc.go	/^func yaml_emitter_write_double_quoted_scalar(emitter *yaml_emitter_t, value []byte, allow_breaks bool) bool {$/;"	f
+yaml_emitter_write_folded_scalar	emitterc.go	/^func yaml_emitter_write_folded_scalar(emitter *yaml_emitter_t, value []byte) bool {$/;"	f
+yaml_emitter_write_indent	emitterc.go	/^func yaml_emitter_write_indent(emitter *yaml_emitter_t) bool {$/;"	f
+yaml_emitter_write_indicator	emitterc.go	/^func yaml_emitter_write_indicator(emitter *yaml_emitter_t, indicator []byte, need_whitespace, is_whitespace, is_indention bool) bool {$/;"	f
+yaml_emitter_write_literal_scalar	emitterc.go	/^func yaml_emitter_write_literal_scalar(emitter *yaml_emitter_t, value []byte) bool {$/;"	f
+yaml_emitter_write_plain_scalar	emitterc.go	/^func yaml_emitter_write_plain_scalar(emitter *yaml_emitter_t, value []byte, allow_breaks bool) bool {$/;"	f
+yaml_emitter_write_single_quoted_scalar	emitterc.go	/^func yaml_emitter_write_single_quoted_scalar(emitter *yaml_emitter_t, value []byte, allow_breaks bool) bool {$/;"	f
+yaml_emitter_write_tag_content	emitterc.go	/^func yaml_emitter_write_tag_content(emitter *yaml_emitter_t, value []byte, need_whitespace bool) bool {$/;"	f
+yaml_emitter_write_tag_handle	emitterc.go	/^func yaml_emitter_write_tag_handle(emitter *yaml_emitter_t, value []byte) bool {$/;"	f
+yaml_encoding_t	yamlh.go	/^type yaml_encoding_t int$/;"	t
+yaml_error_type_t	yamlh.go	/^type yaml_error_type_t int$/;"	t
+yaml_event_delete	apic.go	/^func yaml_event_delete(event *yaml_event_t) {$/;"	f
+yaml_event_t	yamlh.go	/^type yaml_event_t struct {$/;"	t
+yaml_event_type_t	yamlh.go	/^type yaml_event_type_t int8$/;"	t
+yaml_file_read_handler	apic.go	/^func yaml_file_read_handler(parser *yaml_parser_t, buffer []byte) (n int, err error) {$/;"	f
+yaml_file_write_handler	apic.go	/^func yaml_file_write_handler(emitter *yaml_emitter_t, buffer []byte) error {$/;"	f
+yaml_insert_token	apic.go	/^func yaml_insert_token(parser *yaml_parser_t, pos int, token *yaml_token_t) {$/;"	f
+yaml_mapping_end_event_initialize	apic.go	/^func yaml_mapping_end_event_initialize(event *yaml_event_t) bool {$/;"	f
+yaml_mapping_start_event_initialize	apic.go	/^func yaml_mapping_start_event_initialize(event *yaml_event_t, anchor, tag []byte, implicit bool, style yaml_mapping_style_t) bool {$/;"	f
+yaml_mapping_style_t	yamlh.go	/^type yaml_mapping_style_t yaml_style_t$/;"	t
+yaml_mark_t	yamlh.go	/^type yaml_mark_t struct {$/;"	t
+yaml_node_item_t	yamlh.go	/^type yaml_node_item_t int$/;"	t
+yaml_node_pair_t	yamlh.go	/^type yaml_node_pair_t struct {$/;"	t
+yaml_node_t	yamlh.go	/^type yaml_node_t struct {$/;"	t
+yaml_node_type_t	yamlh.go	/^type yaml_node_type_t int$/;"	t
+yaml_parser_append_tag_directive	parserc.go	/^func yaml_parser_append_tag_directive(parser *yaml_parser_t, value yaml_tag_directive_t, allow_duplicates bool, mark yaml_mark_t) bool {$/;"	f
+yaml_parser_decrease_flow_level	scannerc.go	/^func yaml_parser_decrease_flow_level(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_delete	apic.go	/^func yaml_parser_delete(parser *yaml_parser_t) {$/;"	f
+yaml_parser_determine_encoding	readerc.go	/^func yaml_parser_determine_encoding(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_fetch_anchor	scannerc.go	/^func yaml_parser_fetch_anchor(parser *yaml_parser_t, typ yaml_token_type_t) bool {$/;"	f
+yaml_parser_fetch_block_entry	scannerc.go	/^func yaml_parser_fetch_block_entry(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_fetch_block_scalar	scannerc.go	/^func yaml_parser_fetch_block_scalar(parser *yaml_parser_t, literal bool) bool {$/;"	f
+yaml_parser_fetch_directive	scannerc.go	/^func yaml_parser_fetch_directive(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_fetch_document_indicator	scannerc.go	/^func yaml_parser_fetch_document_indicator(parser *yaml_parser_t, typ yaml_token_type_t) bool {$/;"	f
+yaml_parser_fetch_flow_collection_end	scannerc.go	/^func yaml_parser_fetch_flow_collection_end(parser *yaml_parser_t, typ yaml_token_type_t) bool {$/;"	f
+yaml_parser_fetch_flow_collection_start	scannerc.go	/^func yaml_parser_fetch_flow_collection_start(parser *yaml_parser_t, typ yaml_token_type_t) bool {$/;"	f
+yaml_parser_fetch_flow_entry	scannerc.go	/^func yaml_parser_fetch_flow_entry(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_fetch_flow_scalar	scannerc.go	/^func yaml_parser_fetch_flow_scalar(parser *yaml_parser_t, single bool) bool {$/;"	f
+yaml_parser_fetch_key	scannerc.go	/^func yaml_parser_fetch_key(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_fetch_more_tokens	scannerc.go	/^func yaml_parser_fetch_more_tokens(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_fetch_next_token	scannerc.go	/^func yaml_parser_fetch_next_token(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_fetch_plain_scalar	scannerc.go	/^func yaml_parser_fetch_plain_scalar(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_fetch_stream_end	scannerc.go	/^func yaml_parser_fetch_stream_end(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_fetch_stream_start	scannerc.go	/^func yaml_parser_fetch_stream_start(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_fetch_tag	scannerc.go	/^func yaml_parser_fetch_tag(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_fetch_value	scannerc.go	/^func yaml_parser_fetch_value(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_increase_flow_level	scannerc.go	/^func yaml_parser_increase_flow_level(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_initialize	apic.go	/^func yaml_parser_initialize(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_parse	parserc.go	/^func yaml_parser_parse(parser *yaml_parser_t, event *yaml_event_t) bool {$/;"	f
+yaml_parser_parse_block_mapping_key	parserc.go	/^func yaml_parser_parse_block_mapping_key(parser *yaml_parser_t, event *yaml_event_t, first bool) bool {$/;"	f
+yaml_parser_parse_block_mapping_value	parserc.go	/^func yaml_parser_parse_block_mapping_value(parser *yaml_parser_t, event *yaml_event_t) bool {$/;"	f
+yaml_parser_parse_block_sequence_entry	parserc.go	/^func yaml_parser_parse_block_sequence_entry(parser *yaml_parser_t, event *yaml_event_t, first bool) bool {$/;"	f
+yaml_parser_parse_document_content	parserc.go	/^func yaml_parser_parse_document_content(parser *yaml_parser_t, event *yaml_event_t) bool {$/;"	f
+yaml_parser_parse_document_end	parserc.go	/^func yaml_parser_parse_document_end(parser *yaml_parser_t, event *yaml_event_t) bool {$/;"	f
+yaml_parser_parse_document_start	parserc.go	/^func yaml_parser_parse_document_start(parser *yaml_parser_t, event *yaml_event_t, implicit bool) bool {$/;"	f
+yaml_parser_parse_flow_mapping_key	parserc.go	/^func yaml_parser_parse_flow_mapping_key(parser *yaml_parser_t, event *yaml_event_t, first bool) bool {$/;"	f
+yaml_parser_parse_flow_mapping_value	parserc.go	/^func yaml_parser_parse_flow_mapping_value(parser *yaml_parser_t, event *yaml_event_t, empty bool) bool {$/;"	f
+yaml_parser_parse_flow_sequence_entry	parserc.go	/^func yaml_parser_parse_flow_sequence_entry(parser *yaml_parser_t, event *yaml_event_t, first bool) bool {$/;"	f
+yaml_parser_parse_flow_sequence_entry_mapping_end	parserc.go	/^func yaml_parser_parse_flow_sequence_entry_mapping_end(parser *yaml_parser_t, event *yaml_event_t) bool {$/;"	f
+yaml_parser_parse_flow_sequence_entry_mapping_key	parserc.go	/^func yaml_parser_parse_flow_sequence_entry_mapping_key(parser *yaml_parser_t, event *yaml_event_t) bool {$/;"	f
+yaml_parser_parse_flow_sequence_entry_mapping_value	parserc.go	/^func yaml_parser_parse_flow_sequence_entry_mapping_value(parser *yaml_parser_t, event *yaml_event_t) bool {$/;"	f
+yaml_parser_parse_indentless_sequence_entry	parserc.go	/^func yaml_parser_parse_indentless_sequence_entry(parser *yaml_parser_t, event *yaml_event_t) bool {$/;"	f
+yaml_parser_parse_node	parserc.go	/^func yaml_parser_parse_node(parser *yaml_parser_t, event *yaml_event_t, block, indentless_sequence bool) bool {$/;"	f
+yaml_parser_parse_stream_start	parserc.go	/^func yaml_parser_parse_stream_start(parser *yaml_parser_t, event *yaml_event_t) bool {$/;"	f
+yaml_parser_process_directives	parserc.go	/^func yaml_parser_process_directives(parser *yaml_parser_t,$/;"	f
+yaml_parser_process_empty_scalar	parserc.go	/^func yaml_parser_process_empty_scalar(parser *yaml_parser_t, event *yaml_event_t, mark yaml_mark_t) bool {$/;"	f
+yaml_parser_remove_simple_key	scannerc.go	/^func yaml_parser_remove_simple_key(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_roll_indent	scannerc.go	/^func yaml_parser_roll_indent(parser *yaml_parser_t, column, number int, typ yaml_token_type_t, mark yaml_mark_t) bool {$/;"	f
+yaml_parser_save_simple_key	scannerc.go	/^func yaml_parser_save_simple_key(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_scan	scannerc.go	/^func yaml_parser_scan(parser *yaml_parser_t, token *yaml_token_t) bool {$/;"	f
+yaml_parser_scan_anchor	scannerc.go	/^func yaml_parser_scan_anchor(parser *yaml_parser_t, token *yaml_token_t, typ yaml_token_type_t) bool {$/;"	f
+yaml_parser_scan_block_scalar	scannerc.go	/^func yaml_parser_scan_block_scalar(parser *yaml_parser_t, token *yaml_token_t, literal bool) bool {$/;"	f
+yaml_parser_scan_block_scalar_breaks	scannerc.go	/^func yaml_parser_scan_block_scalar_breaks(parser *yaml_parser_t, indent *int, breaks *[]byte, start_mark yaml_mark_t, end_mark *yaml_mark_t) bool {$/;"	f
+yaml_parser_scan_directive	scannerc.go	/^func yaml_parser_scan_directive(parser *yaml_parser_t, token *yaml_token_t) bool {$/;"	f
+yaml_parser_scan_directive_name	scannerc.go	/^func yaml_parser_scan_directive_name(parser *yaml_parser_t, start_mark yaml_mark_t, name *[]byte) bool {$/;"	f
+yaml_parser_scan_flow_scalar	scannerc.go	/^func yaml_parser_scan_flow_scalar(parser *yaml_parser_t, token *yaml_token_t, single bool) bool {$/;"	f
+yaml_parser_scan_plain_scalar	scannerc.go	/^func yaml_parser_scan_plain_scalar(parser *yaml_parser_t, token *yaml_token_t) bool {$/;"	f
+yaml_parser_scan_tag	scannerc.go	/^func yaml_parser_scan_tag(parser *yaml_parser_t, token *yaml_token_t) bool {$/;"	f
+yaml_parser_scan_tag_directive_value	scannerc.go	/^func yaml_parser_scan_tag_directive_value(parser *yaml_parser_t, start_mark yaml_mark_t, handle, prefix *[]byte) bool {$/;"	f
+yaml_parser_scan_tag_handle	scannerc.go	/^func yaml_parser_scan_tag_handle(parser *yaml_parser_t, directive bool, start_mark yaml_mark_t, handle *[]byte) bool {$/;"	f
+yaml_parser_scan_tag_uri	scannerc.go	/^func yaml_parser_scan_tag_uri(parser *yaml_parser_t, directive bool, head []byte, start_mark yaml_mark_t, uri *[]byte) bool {$/;"	f
+yaml_parser_scan_to_next_token	scannerc.go	/^func yaml_parser_scan_to_next_token(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_scan_uri_escapes	scannerc.go	/^func yaml_parser_scan_uri_escapes(parser *yaml_parser_t, directive bool, start_mark yaml_mark_t, s *[]byte) bool {$/;"	f
+yaml_parser_scan_version_directive_number	scannerc.go	/^func yaml_parser_scan_version_directive_number(parser *yaml_parser_t, start_mark yaml_mark_t, number *int8) bool {$/;"	f
+yaml_parser_scan_version_directive_value	scannerc.go	/^func yaml_parser_scan_version_directive_value(parser *yaml_parser_t, start_mark yaml_mark_t, major, minor *int8) bool {$/;"	f
+yaml_parser_set_encoding	apic.go	/^func yaml_parser_set_encoding(parser *yaml_parser_t, encoding yaml_encoding_t) {$/;"	f
+yaml_parser_set_input_file	apic.go	/^func yaml_parser_set_input_file(parser *yaml_parser_t, file *os.File) {$/;"	f
+yaml_parser_set_input_string	apic.go	/^func yaml_parser_set_input_string(parser *yaml_parser_t, input []byte) {$/;"	f
+yaml_parser_set_parser_error	parserc.go	/^func yaml_parser_set_parser_error(parser *yaml_parser_t, problem string, problem_mark yaml_mark_t) bool {$/;"	f
+yaml_parser_set_parser_error_context	parserc.go	/^func yaml_parser_set_parser_error_context(parser *yaml_parser_t, context string, context_mark yaml_mark_t, problem string, problem_mark yaml_mark_t) bool {$/;"	f
+yaml_parser_set_reader_error	readerc.go	/^func yaml_parser_set_reader_error(parser *yaml_parser_t, problem string, offset int, value int) bool {$/;"	f
+yaml_parser_set_scanner_error	scannerc.go	/^func yaml_parser_set_scanner_error(parser *yaml_parser_t, context string, context_mark yaml_mark_t, problem string) bool {$/;"	f
+yaml_parser_set_scanner_tag_error	scannerc.go	/^func yaml_parser_set_scanner_tag_error(parser *yaml_parser_t, directive bool, context_mark yaml_mark_t, problem string) bool {$/;"	f
+yaml_parser_stale_simple_keys	scannerc.go	/^func yaml_parser_stale_simple_keys(parser *yaml_parser_t) bool {$/;"	f
+yaml_parser_state_machine	parserc.go	/^func yaml_parser_state_machine(parser *yaml_parser_t, event *yaml_event_t) bool {$/;"	f
+yaml_parser_state_t	yamlh.go	/^type yaml_parser_state_t int$/;"	t
+yaml_parser_t	yamlh.go	/^type yaml_parser_t struct {$/;"	t
+yaml_parser_unroll_indent	scannerc.go	/^func yaml_parser_unroll_indent(parser *yaml_parser_t, column int) bool {$/;"	f
+yaml_parser_update_buffer	readerc.go	/^func yaml_parser_update_buffer(parser *yaml_parser_t, length int) bool {$/;"	f
+yaml_parser_update_raw_buffer	readerc.go	/^func yaml_parser_update_raw_buffer(parser *yaml_parser_t) bool {$/;"	f
+yaml_read_handler_t	yamlh.go	/^type yaml_read_handler_t func(parser *yaml_parser_t, buffer []byte) (n int, err error)$/;"	t
+yaml_scalar_event_initialize	apic.go	/^func yaml_scalar_event_initialize(event *yaml_event_t, anchor, tag, value []byte, plain_implicit, quoted_implicit bool, style yaml_scalar_style_t) bool {$/;"	f
+yaml_scalar_style_t	yamlh.go	/^type yaml_scalar_style_t yaml_style_t$/;"	t
+yaml_sequence_end_event_initialize	apic.go	/^func yaml_sequence_end_event_initialize(event *yaml_event_t) bool {$/;"	f
+yaml_sequence_start_event_initialize	apic.go	/^func yaml_sequence_start_event_initialize(event *yaml_event_t, anchor, tag []byte, implicit bool, style yaml_sequence_style_t) bool {$/;"	f
+yaml_sequence_style_t	yamlh.go	/^type yaml_sequence_style_t yaml_style_t$/;"	t
+yaml_simple_key_t	yamlh.go	/^type yaml_simple_key_t struct {$/;"	t
+yaml_stream_end_event_initialize	apic.go	/^func yaml_stream_end_event_initialize(event *yaml_event_t) bool {$/;"	f
+yaml_stream_start_event_initialize	apic.go	/^func yaml_stream_start_event_initialize(event *yaml_event_t, encoding yaml_encoding_t) bool {$/;"	f
+yaml_string_read_handler	apic.go	/^func yaml_string_read_handler(parser *yaml_parser_t, buffer []byte) (n int, err error) {$/;"	f
+yaml_string_write_handler	apic.go	/^func yaml_string_write_handler(emitter *yaml_emitter_t, buffer []byte) error {$/;"	f
+yaml_style_t	yamlh.go	/^type yaml_style_t int8$/;"	t
+yaml_tag_directive_t	yamlh.go	/^type yaml_tag_directive_t struct {$/;"	t
+yaml_token_t	yamlh.go	/^type yaml_token_t struct {$/;"	t
+yaml_token_type_t	yamlh.go	/^type yaml_token_type_t int$/;"	t
+yaml_version_directive_t	yamlh.go	/^type yaml_version_directive_t struct {$/;"	t
+yaml_write_handler_t	yamlh.go	/^type yaml_write_handler_t func(emitter *yaml_emitter_t, buffer []byte) error$/;"	t
